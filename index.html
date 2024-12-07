@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD | Alto Taquari</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
+    <link rel="shortcut icon" type="imagex/png" href="imagens/icone.ico">
+    <link rel="stylesheet" href="estilo.css/estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu_conteudo">
+            <a href="index.html"><img class="logo" src="imagens/logo.png" alt="logo"></a>
+
+            <ul class="menu" id="menu">
+                <li class="list"><a href="teste.html">Doações</a></li>
+                <li class="list"><a href="#caixa_de_oracao">Caixa de oração</a></li>
+                <li class="list"><a href="teste.html">Galeria</a></li>
+                <li class="list"><a class="fundo_endereco" href="teste.html">Endereço</a></li>
+            </ul>
+
+            <ul class="menu_mobile">
+                <li><span class="material-symbols-outlined" onclick="clickMenu()">menu</span></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="inicio">
+            <div class="primeira_parte">
+                <h1>A igreja da família em Alto Taquari</h1>
+                <h2>AD | Alto Taquari</h2>
+            </div>
+
+            <div class="versiculo">"Tudo posso naquele que me fortalece."<br>Filipenses 4:13</div>
+        </section>
+
+        <section class="cultos_semanais" id="conteudo_geral">
+            <h2>Cultos Semanais</h2>
+            <div class="cultos_horarios">
+                <div class="cultos" id="a">
+                    <p>Segunda</p>
+                </div>
+                <div class="cultos" id="b">
+                    <p>Terça</p>
+                </div>
+                <div class="cultos" id="c">
+                    <p>Quarta</p>
+                </div>
+                <div class="cultos">
+                    <p>Quinta</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="caixa_de_oracao" class="caixa_de_oracao">
+            <h2>Coloque aqui o seu pedido de oração</h2>
+            <div class="caixa_de_pedidos">
+                <form class="form_oracao" action="#" method="GET">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                    <label for="adicional">Informação Adicional</label>
+                    <input type="text" id="adicional" name="adicional" placeholder="Digite informações adicionais">
+
+                    <label for="texto-principal">Texto Principal</label>
+                    <textarea id="texto-principal" name="texto-principal" rows="10" placeholder="Digite seu pedido aqui"
+                        required></textarea>
+
+                        <button class="enviar" type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/script_menu.js"></script>
+
+</body>
+
+</html>

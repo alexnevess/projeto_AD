@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Aqui começa o cabeçalho do site*/
+
+header {
+    background: linear-gradient(to right, #38b6ff, #44489a);
+    position: sticky;
+    /*stick para manter o cabeçalho no topo da tela*/
+    top: 0px;
+    /*apartir de 0px do topo*/
+}
+
+.logo {
+    width: 90px;
+}
+
+.menu_conteudo {
+    /*essa div é responsável por manter o conteúdo do cabeçalho no meio da tela*/
+    position: sticky;
+    /*pode causar problemas(mas deu certo), sem isso o a lista(menu) vai pro canto direito da tela*/
+    top: 0px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.menu,
+.menu_mobile {
+    /*configura os menus(lista e hamburguer)*/
+    list-style: none;
+    right: 0px;
+    /*mantém no canto direito através de position:absolure*/
+    position: absolute;
+    /*para manter alinhado*/
+    top: 50%;
+    /*centraliza verticalmente*/
+    transform: translateY(-50%);
+    /*para centralizar*/
+}
+
+.menu_mobile {
+    /*some com o menu hamburguer no desktop*/
+    color: white;
+    display: none;
+}
+
+.menu_mobile span {
+    /*tamanho do menu hamburguer*/
+    font-size: 40px;
+}
+
+.menu li {
+    /*configura a lista de menu*/
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.menu a {
+    /*configura os links do menu*/
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fundo_endereco {
+    background-color: #0298da;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+header img {
+    /*logo*/
+    width: 80px;
+    padding: 15px;
+}
+
+
+/*Aqui começa o conteúdo principal do texto*/
+.inicio {
+    background: linear-gradient(to right, #38b6ff, #44489a);
+    padding-top: 10vw;
+}
+
+.primeira_parte {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 10vw;
+}
+
+.primeira_parte h1,
+.primeira_parte h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.primeira_parte h1 {
+    font-size: 80px;
+}
+
+.primeira_parte h2 {
+    font-size: 40px;
+}
+
+.versiculo {
+    max-width: 90%;
+    margin: auto;
+    right: 100%;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    padding-bottom: 8vw;
+}
+
+#conteudo_geral {
+    max-width: 70%;
+    margin: auto;
+}
+
+.cultos_semanais h2 {
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.cultos_horarios {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que as divs se movam para a próxima linha quando necessário */
+    gap: 10px;
+    /* Espaço entre as divs filhas */
+}
+
+.cultos {
+    background: linear-gradient(to right, #38b6ff, #44489a);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 24%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*
+#a{
+    background-color: red;
+
+}
+
+#b{
+    background-color: black;
+}
+
+#c{
+    background-color: green;
+}*/
+
+
+
+/*Aqui é configurado a section do formulário da caixa de oração*/
+
+.caixa_de_oracao {
+    margin-top: 90px;
+    padding-bottom: 90px;
+    background: linear-gradient(to right, #38b6ff, #44489a);
+    scroll-margin-top: 80px; 
+}
+
+.caixa_de_oracao h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 70px 0;
+}
+
+.caixa_de_pedidos {
+    max-width: 35%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 35px;
+}
+
+.form_oracao {
+    display: flex;
+    flex-direction: column;
+    /* Alinhar em coluna */
+    gap: 10px;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.enviar {
+    border: none;
+    border-radius: 15px;
+    margin: auto;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to right, #38b6ff, #44489a);
+    margin-top: 15px;
+}
+
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #0298da;
+}
+
+@media (max-width: 855px) {
+
+    .logo {
+        width: 80px;
+    }
+
+
+    .menu {
+        position: fixed;
+        background: linear-gradient(to right, #38b6ff, #44489a);
+        max-width: 80%;
+        height: 100%;
+        padding-top: 40vw;
+        display: none;
+
+    }
+
+
+    .menu li {
+        /*configura a lista de menu*/
+        display: block;
+        margin: 0 20px 30px;
+        ;
+        padding: 5px;
+    }
+
+    .menu a {
+        border: solid white 2px;
+        border-radius: 20px;
+        padding: 10px;
+        display: block;
+        font-size: 22px;
+
+    }
+
+    .fundo_endereco {
+        background: none;
+        padding: 0px;
+        border-radius: 0;
+    }
+
+
+    .menu_mobile {
+        /*coloca o menu hamburguer*/
+        display: block;
+    }
+
+    .primeira_parte h1 {
+        font-size: 40px;
+    }
+
+    .primeira_parte h2 {
+        font-size: 20px;
+    }
+
+    .versiculo {
+        padding-top: 20vw;
+        font-size: 15px;
+    }
+
+
+    .cultos_horarios {
+        flex-direction: column;
+        /* Coloca as divs em coluna em telas menores */
+    }
+
+    .cultos {
+        width: 100%;
+        /* Faz as divs preencherem a largura total da tela */
+    }
+
+    .caixa_de_oracao h2 {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .caixa_de_pedidos {
+        max-width: 80%;
+    }
+}
